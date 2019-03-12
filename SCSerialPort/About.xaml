@@ -1,0 +1,28 @@
+﻿<Window x:Class="SCSerialPort.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SCSerialPort"
+        mc:Ignorable="d"
+        Title="About" Height="300" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/image/about.jpg"/>
+        </Grid.Background>
+        <Button FontSize="16" FontWeight="Bold" Margin="32,14,32,189" IsEnabled="False">
+            <Button.OpacityMask>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Offset="0" Color="Black"></GradientStop>
+                    <GradientStop Offset="1" Color="Transparent"></GradientStop>
+                </LinearGradientBrush>
+            </Button.OpacityMask>
+            <Button.Content>
+                <StackPanel>
+                    <TextBlock Foreground="#FF0C0C63">Design by lsc</TextBlock>
+                    <TextBlock Foreground="#FF0C0C63" FontSize="13">版本 1.0.0.0</TextBlock>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+    </Grid>
+</Window>
